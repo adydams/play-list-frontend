@@ -100,7 +100,7 @@
         this.playlist = [];
   
         try {
-          const response = await fetch(`http://127.0.0.1:5000/generate_playlist?genre=${this.genre}`);
+          const response = await fetch(`https://play-list-backend.onrender.com/generate_playlist?genre=${this.genre}`);
           const data = await response.json();
           this.playlist = data.playlist;
         } catch (error) {
